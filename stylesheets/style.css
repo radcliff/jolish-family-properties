@@ -1,4 +1,3 @@
-/* your theme's styles */
 body {
 	padding:0;
 	margin:0;
@@ -7,4 +6,14 @@ body {
 	position:absolute;
 	width:100%;
 	height:100%;
+}
+div.leaflet-div-icon {
+  border-radius: 3px;
+  background-image: none;
+  -webkit-background-image: none;
+  -moz-background-image: none;
+}
+
+div.leaflet-div-icon div div.legend-box {
+  border: 1px solid black;
 }

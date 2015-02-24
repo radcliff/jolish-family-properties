@@ -41,9 +41,12 @@
     addMarker = function(property) {
       var color, marker, options, owner, pieSlice;
       options = {
-        weight: 1,
+        weight: 0,
         radius: 7.5,
         fillOpacity: 1.0
+      };
+      options.tooltipOptions = {
+        iconSize: null
       };
       options.data = property.owners;
       options.chartOptions = {};
