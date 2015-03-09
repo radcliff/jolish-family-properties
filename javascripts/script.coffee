@@ -24,6 +24,18 @@ init = ->
   baseLayer = L.tileLayer 'https://arcane-earth-7958.herokuapp.com/v2/sf-tiles/{z}/{x}/{y}.png'
   baseLayer.addTo map
 
+  parcelLayer = L.geoJson parcels, { style: "color": "#ff6666" }
+  parcelLayer
+  parcelLayer.addTo map
+
+  parcelLayer.on 'mouseover', (e) ->
+    e.layer.bindPopup e.layer.feature.properties.address, 
+      className: 'popupContent'
+      closeButton: false
+    e.layer.openPopup()
+  parcelLayer.on 'mouseout', (e) ->
+    e.layer.closePopup()
+
   ownerColors = 
     'Jolish Limited Partnership': 'coral'
     'Emanuel & Ahuva Jolish': ' crimson'

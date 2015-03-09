@@ -17,3 +17,7 @@ div.leaflet-div-icon {
 div.leaflet-div-icon div div.legend-box {
   border: 1px solid black;
 }
+
+.popupContent {
+  font-weight: bold;
+}
