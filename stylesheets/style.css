@@ -21,3 +21,14 @@ div.leaflet-div-icon div div.legend-box {
 .popupContent {
   font-weight: bold;
 }
+
+.leaflet-popup-tip-container {
+  display: none;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: white;
+  box-shadow: none;
+  border-radius: 3px;
+  border: 1px solid #ff6666;
+}
